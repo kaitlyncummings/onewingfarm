@@ -1,0 +1,47 @@
+body{
+    color: blueviolet;
+    background-color: #90B5E0;
+    
+}
+header{
+    color: #FAF4AA;
+    background-repeat: no-repeat;
+}
+h1{
+    padding-top: .08em;
+    padding-left: 1.33em;
+    font-family: 'Lucida Handwriting', cursive;
+    font-size: 5em;
+}
+nav{
+    text-align: right;
+    font-family: 'Lucida Handwriting', serif;
+    background-color: #FAF4AA;
+    padding-right: 1.33em;
+    font-size: 2.5em;
+}
+main{
+    margin-top: -1.65em;
+}
+nav a {
+    text-decoration: none;
+    color: #93AAD3;
+}
+h2{
+    background-color: #877f7d;
+    color: #32382E;
+    font-size: 2em;
+    padding-left: .5em;
+}
+h3{
+    font-size: 2em;
+}
+#header{
+    background-image: url(../media/Header.jpg);
+    background-position-x: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 130px;
+    background-color: #32382E;
+}
+
