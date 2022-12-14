@@ -1,47 +1,546 @@
+/* Global styles */
+*{
+    font-family: 'Lucida Handwriting', serif;
+}
 body{
-    color: blueviolet;
     background-color: #90B5E0;
-    
 }
 header{
-    color: #FAF4AA;
     background-repeat: no-repeat;
 }
 h1{
-    padding-top: .08em;
-    padding-left: 1.33em;
-    font-family: 'Lucida Handwriting', cursive;
-    font-size: 5em;
+    color: #FAF4AA;
+    border: outset;
 }
 nav{
-    text-align: right;
-    font-family: 'Lucida Handwriting', serif;
     background-color: #FAF4AA;
-    padding-right: 1.33em;
-    font-size: 2.5em;
+    color: #90B5E0;
 }
 main{
     margin-top: -1.65em;
 }
 nav a {
     text-decoration: none;
-    color: #93AAD3;
 }
 h2{
     background-color: #877f7d;
     color: #32382E;
-    font-size: 2em;
-    padding-left: .5em;
+    font-size: 3em;
+    padding-left: 1em;
+    margin-top: 0%;
+}
+article{
+    background-color: #FAF4AA;
+    color: #32382E;
+    padding: 1em;
+    padding-left: 3em;
 }
 h3{
-    font-size: 2em;
+    color: #90B5E0;
+    font-size: 4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 9em;
+    text-shadow: 4px 3px 0px #877f7d, 9px 8px 0px #32382E;
+}
+h4{
+    font-size: 1.75em;
+}
+h5{
+    font-size: 1.75em;
+    text-align: center;
+    background-color: #90B5E0;
+    margin-left: .3em;
+    margin-right: .3em;
+}
+footer{
+    background-color: #32382E ;
+    color: #FAF4AA;
+    text-align: center;
+    padding: 1em;
+    font-size: large;
+}
+a:link{
+    text-decoration: none;
+    color: #FAF4AA;
+}
+a:visited{
+    color: currentColor;
 }
 #header{
-    background-image: url(../media/Header.jpg);
+    background-image: url(../media/header.jpg);
     background-position-x: right;
     background-size: contain;
     background-repeat: no-repeat;
-    height: 130px;
+    height: 8em;
     background-color: #32382E;
 }
+p{
+    font-size: 1.5em
+}
+ul{
+    font-size: 1.5em;
+}
+.prosAndCons{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: -2em;
+}
+.pros{
+    flex: 50%;
+}
+.cons{
+    flex: 50%;
+}
+/* Home page styles */
+#awards{
+    background-image: url(../media/awards.jpg);
+    background-position: center;
+    height: 22em;
+    background-repeat: no-repeat;
+    margin-top: -4%;
+}
+.home{
+    height: 2em;
+    text-shadow: none;
+}
 
+@media (max-width: 600px){
+    /*Global styles*/
+    h1{
+        padding-top: 1.25em;
+        font-size: 2.5em;
+        text-shadow: 4px 3px 0px #32382E;
+        text-align: center;
+        height: 1.83em;
+    }
+    nav{
+        font-size: 1.2em;
+        text-align: center;
+        height: 2.7em;
+    }
+    h2{
+        font-size: 1.5em;
+        padding-left: 1em;
+    }
+    /* Yours page styles*/ 
+    #amber{
+        background-attachment: fixed;
+        background-image: url(../media/amber.jpg);
+        background-position-x: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    #gunner{
+        background-attachment: fixed;
+        background-image: url(../media/gunnerDisappointment.JPG);
+        background-position-x: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    #mira{
+        background-attachment: fixed;
+        background-image: url(../media/miraAndMe.JPG);
+        background-position-x: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    #jelly{
+        background-attachment: fixed;
+        background-image: url(../media/jellyOutside.JPG);
+        background-position-x: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    #aspen{
+        background-attachment: fixed;
+        background-image: url(../media/aspenBarn.jpg);
+        background-position-x: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    /* Mine page styles*/
+    #dillon{
+        background-attachment: fixed;
+        background-image: url(../media/dillon.JPG);
+        background-position-x: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    #lila{
+        background-attachment: fixed;
+        background-image: url(../media/lilaDumb.PNG);
+        background-position-x: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    #chonk{
+        background-attachment: fixed;
+        background-image: url(../media/chonkGrain.JPG);
+        background-position-x: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    #zen{
+        background-attachment: fixed;
+        background-image: url(../media/zen.JPG);
+        background-position-x: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    #nika{
+        background-attachment: fixed;
+        background-image: url(../media/nika.JPG);
+        background-position-x: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+ 
+    /* Ours page styles */
+    #link{
+        background-attachment: fixed;
+        background-image: url(../media/linkCostume.jpg);
+        background-position-x: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    #astro{
+        background-attachment: fixed;
+        background-image: url(../media/astroTongue.jpg);
+        background-position-x: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    #goose{
+        background-attachment: fixed;
+        background-image: url(../media/gooseNight.png);
+        background-position-x: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    #wicket{
+        background-attachment: fixed;
+        background-image: url(../media/wicketInTheHouse.jpg);
+        background-position-x: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    #daisy{
+        background-attachment: fixed;
+        background-image: url(../media/daisyAndMe.JPG);
+        background-position-x: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+ 
+    /* Donks page styles */
+    #midna{
+        background-attachment: fixed;
+        background-image: url(../media/midnaBridle.jpg);
+        background-position-x: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    #cass{
+        background-attachment: fixed;
+        background-image: url(../media/cassCarrot.jpeg);
+        background-position-x: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}
+
+@media (min-width: 600px){
+ /*Global styles*/
+    h1{
+        padding-top: .7em;
+        padding-left: 1.33em;
+        font-size: 3em;
+        height: 1.86em;
+    }
+    nav{
+        font-size: 1.5em;
+        text-align: center;
+        height: 2.5em;
+    }
+    h2{
+        font-size: 2em;
+        padding-left: 1em;
+    }
+ /* Yours page styles*/ 
+    #amber{
+        background-attachment: fixed;
+        background-image: url(../media/amber.jpg);
+        background-position-x: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    #gunner{
+        background-attachment: fixed;
+        background-image: url(../media/gunnerDisappointment.JPG);
+        background-position-x: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    #mira{
+        background-attachment: fixed;
+        background-image: url(../media/miraAndMe.JPG);
+        background-position-x: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    #jelly{
+        background-attachment: fixed;
+        background-image: url(../media/jellyOutside.JPG);
+        background-position-x: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    #aspen{
+        background-attachment: fixed;
+        background-image: url(../media/aspenBarn.jpg);
+        background-position-x: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    /* Mine page styles*/
+    #dillon{
+        background-attachment: fixed;
+        background-image: url(../media/dillon.JPG);
+        background-position-x: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    #lila{
+        background-attachment: fixed;
+        background-image: url(../media/lilaDumb.PNG);
+        background-position-x: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    #chonk{
+        background-attachment: fixed;
+        background-image: url(../media/chonkGrain.JPG);
+        background-position-x: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    #zen{
+        background-attachment: fixed;
+        background-image: url(../media/zen.JPG);
+        background-position-x: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    #nika{
+        background-attachment: fixed;
+        background-image: url(../media/nika.JPG);
+        background-position-x: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    /* Ours page styles */
+    #link{
+        background-attachment: fixed;
+        background-image: url(../media/linkCostume.jpg);
+        background-position-x: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    #astro{
+        background-attachment: fixed;
+        background-image: url(../media/astroTongue.jpg);
+        background-position-x: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    #goose{
+        background-attachment: fixed;
+        background-image: url(../media/gooseNight.png);
+        background-position-x: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    #wicket{
+        background-attachment: fixed;
+        background-image: url(../media/wicketInTheHouse.jpg);
+        background-position-x: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    #daisy{
+        background-attachment: fixed;
+        background-image: url(../media/daisyAndMe.JPG);
+        background-position-x: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    /* Donks page styles */
+    #midna{
+        background-attachment: fixed;
+        background-image: url(../media/midnaBridle.jpg);
+        background-position-x: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    #cass{
+        background-attachment: fixed;
+        background-image: url(../media/cassCarrot.jpeg);
+        background-position-x: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}
+
+@media( min-width: 1024px){
+    /* Global styles */
+    h1{
+        padding-top: .08em;
+        padding-left: 1.33em;
+        font-size: 5em;
+        height: 1.46em;
+    }
+    nav{
+        text-align: right;
+        padding-right: 1.33em;
+        font-size: 2.5em;
+        height: 2em;
+    }
+    h2{
+        font-size: 3em;
+        padding-left: 1em;
+        margin-top: 0%;
+    }
+    /* Yours page styles*/ 
+    #amber{
+        background-attachment: fixed;
+        background-image: url(../media/amber.jpg), url(../media/amberTiger.jpg), url(../media/amberPoisonIvy.JPG);
+        background-position-x: center, left, right;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    #gunner{
+        background-attachment: fixed;
+        background-image: url(../media/gunnerDisappointment.JPG), url(../media/gunnerRace.PNG), url(../media/gunnerHelmet.jpg);
+        background-position-x: center, left, right;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    #mira{
+        background-attachment: fixed;
+        background-image: url(../media/miraAndMe.JPG), url(../media/miraTrailer.jpg), url(../media/miraAndSis.png);
+        background-position-x: center, left, right;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    #jelly{
+        background-attachment: fixed;
+        background-image: url(../media/jellyOutside.JPG), url(../media/jellyBarn.JPG), url(../media/jellyAndBaby.JPG);
+        background-position-x: center, left, right;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    #aspen{
+        background-attachment: fixed;
+        background-image: url(../media/aspenBarn.jpg), url(../media/aspenLeft.JPG), url(../media/aspenRight.JPG);
+        background-position-x: center, left, right;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    /* Mine page styles*/
+    #dillon{
+        background-attachment: fixed;
+        background-image: url(../media/dillon.JPG), url(../media/dillonBarrel.JPG), url(../media/dillonShowmanship.jpg);
+        background-position-x: center, left, right;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    #lila{
+        background-attachment: fixed;
+        background-image: url(../media/lilaDumb.PNG), url(../media/lilaShake.jpg), url(../media/lilaTrees.JPG);
+        background-position-x: center, left, right;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    #chonk{
+        background-attachment: fixed;
+        background-image: url(../media/chonkGrain.JPG), url(../media/chonkAndAppa.png), url(../media/chonkShow.png);
+        background-position-x: center, left, right;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    #zen{
+        background-attachment: fixed;
+        background-image: url(../media/zen.JPG), url(../media/zenBear.jpg), url(../media/zenCowboyDan.jpg);
+        background-position-x: center, left, right;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    #nika{
+        background-attachment: fixed;
+        background-image: url(../media/nika.JPG), url(../media/nikaBlanket.JPG), url(../media/nikaField.jpg);
+        background-position-x: center, left, right;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    /* Ours page styles */
+    #link{
+        background-attachment: fixed;
+        background-image: url(../media/linkCostume.jpg), url(../media/linkFlag.jpg), url(../media/linkJump.jpg);
+        background-position-x: center, left, right;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    #astro{
+        background-attachment: fixed;
+        background-image: url(../media/astroTongue.jpg), url(../media/astroJumping.png), url(../media/astroAndSis.jpg);
+        background-position-x: center, left, right;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    #goose{
+        background-attachment: fixed;
+        background-image: url(../media/gooseNight.png), url(../media/gooseRun.png), url(../media/goosePen.JPG);
+        background-position-x: center, left, right;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    #wicket{
+        background-attachment: fixed;
+        background-image: url(../media/wicketInTheHouse.jpg), url(../media/wicketLaying.jpg), url(../media/wicketOnTheBed.jpg);
+        background-position-x: center, left, right;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    #daisy{
+        background-attachment: fixed;
+        background-image: url(../media/daisyAndMe.JPG), url(../media/daisyTeeth.JPG), url(../media/daisy.JPG);
+        background-position-x: center, left, right;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    /* Donks page styles */
+    #midna{
+        background-attachment: fixed;
+        background-image: url(../media/midnaBridle.jpg), url(../media/midnaLeft.jpg), url(../media/midnaCone.jpg);
+        background-position-x: center, left, right;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    #cass{
+        background-attachment: fixed;
+        background-image: url(../media/cassCarrot.jpeg), url(../media/cassFuz.jpg), url(../media/cassBlanket.jpg);
+        background-position-x: center, left, right;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}
