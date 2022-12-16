@@ -12,6 +12,9 @@ h1{
     color: #FAF4AA;
     border: outset;
 }
+h1 a{
+    color: #FAF4AA;
+}
 nav{
     background-color: #FAF4AA;
     color: #90B5E0;
@@ -21,6 +24,7 @@ main{
 }
 nav a {
     text-decoration: none;
+    color: #90B5E0;
 }
 h2{
     background-color: #877f7d;
@@ -62,8 +66,7 @@ footer{
     font-size: large;
 }
 a:link{
-    text-decoration: none;
-   
+    text-decoration: none; 
 }
 a:visited{
     color: currentColor;
